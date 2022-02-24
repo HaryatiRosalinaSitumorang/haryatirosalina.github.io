@@ -10,6 +10,9 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
     <title>Haryati Rosalina</title>
@@ -82,11 +85,11 @@
           </div>
         </div>
         <div class="row justify-content-center text-center">
-          <div class="col-md-4">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At facilis tempore iure repudiandae ut veniam consequatur aut tenetur exercitationem vel?</p>
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+            <p>I'm 3rd year undergraduate student at Del Institute of Technology majoring in Information System. I want to start my career as a software developer to build and implement functional programs.</p>
           </div>
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores velit hic, maiores, accusantium tempora, modi ab voluptate repellat corrupti praesentium repudiandae pariatur ratione atque perferendis!</p>
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <p>As an IT enthusiast, I have a general understanding of several programming languages. I have good experience in leadership, time management, project management, teamwork, problem solving and quickly learning new things.</p>
           </div>
         </div>
       </div>
@@ -110,7 +113,15 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
+              <img src="img/projects/nwitee.png" class="card-img-top" alt="nwitee" />
+              <div class="card-body">
+                <p class="card-text">Nwitee is a system designed to help students in obtaining information and becomes a forum for discussion.</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
               <img src="img/projects/nwitee.png" class="card-img-top" alt="nwitee" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -118,21 +129,13 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
               <img src="img/projects/nwitee.png" class="card-img-top" alt="nwitee" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/nwitee.png" class="card-img-top" alt="nwitee" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -270,6 +273,13 @@
       gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
       gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
       gsap.from(".display-4", { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: "back" });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
     </script>
 
     <script>
