@@ -1,9 +1,9 @@
 .jumbotron {
   padding-top: 6rem;
-  background-color: #e2edff;
+  background-color: #ddf9ec;
 }
 #projects {
-  background-color: #e2edff;
+  background-color: #ddf9ec;
 }
 section {
   padding-top: 5rem;
@@ -13,5 +13,5 @@ section {
   /* height: 300px; */
 }
 #contact {
-  background-color: #e2edff;
+  background-color: #ddf9ec;
 }
